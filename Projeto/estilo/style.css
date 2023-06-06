@@ -35,13 +35,13 @@ header > h1{
     color: white;
 }
 menu{
-    display: block;
+    display: none;
 }
 menu > ul{
     list-style-type: none;
 }
 menu > ul > li > a{
-    display: none;
+    display: block;
     text-decoration: none;
     padding: 10px;
     background-color: rgba(35, 72, 173, 0.658);
