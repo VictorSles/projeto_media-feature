@@ -11,7 +11,7 @@
     <title>Texto :: Project</title>
 </head>
 
-<body>
+<body onresize="MudarTela()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="interacao()">menu</span>
@@ -54,6 +54,13 @@
         </article>
     </main>
     <script>
+        function MudarTela(){
+            if  (window.innerWidth=750){
+                itens.style.display=`block`;
+            }else{
+                itens.style.display=`none`;
+            }
+        }
         function interacao() {
             if (itens.style.display=='block'){
                 itens.style.display='none';
